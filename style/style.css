@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    position: relative;
+    height: 73vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    z-index: 102;
+    background: rgba(32, 33, 37, 0.574)!important;
+    width: 100vw;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+}
+
+body{
+    background-color: black;
+}
+
+.line{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 5px;
+}
+
+#search-img{
+    width: 30px;
+}
+
+.contain{
+    max-height: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.search{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search input{
+    background: transparent;
+    flex:1;
+    border: 0;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.search-img{
+    width: 15px;
+}
+
+.search button{
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#logo-img{
+    width: 150px;
+}
+
+.sea-img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.profile{
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 11px;
+}
+
+.gap{
+    width: 45%;
+
+}
+
+.p{
+    margin: 5px 15px;
+}
+
+
+.slideshow{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slideshow-img{
+    width: 20%;
+    height: inherit;
+    float: left;
+    transition-duration: 0ms;
+}
+
+.slideshow figure{
+    height: inherit;
+    position: relative;
+    display: flex;
+    width: 500%;
+    left: 0;
+    margin: 0;
+    animation: slider 10s infinite linear;
+    box-shadow: 189px 9px 305px 150px rgba(0, 0, 0, 0) inset;
+}
+
+.changes{
+    width: 42%;
+    margin-top: 122px;
+    margin-left: 25px;
+}
+
+@keyframes slider{
+    0%{left:0%;}
+    15%{left:0%;}
+    22%{left:-100%;}
+    35%{left:-100%;}
+    50%{left:-200%;}
+    60%{left:-200%;}
+    68%{left:-300%;}
+    75%{left:-300%;}
+    85%{left:-400%;}
+    100%{left:-400%;}
+}
+
+#shadow{
+    box-shadow: 376px -66px 182px 117px rgb(0 0 0 / 90%) inset;
+    z-index: 33;
+    background: rgba(255, 255, 255, 0);
+}
+
+.box{
+    color: white;
+    z-index: 50;
+}
+
+.heading{
+    font-size: 55px;
+    overflow: hidden;
+    font-family: 'Mukta', sans-serif;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.description{
+    font-size: 16px;
+    margin-top: 36px;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+#burger{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.button{
+    margin-top: 50px;
+    display: flex;
+}
+
+.now{
+    padding: 5px 12px 5px 12px;
+    margin-right: 13px;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.watch{
+    background-color: rgb(180, 247, 79);
+    display: flex;
+}
+
+.watch img{
+    width: 20px;
+    height: 20px;
+
+}
+
+.trending-menu{
+    display: flex;
+    width: 100%;
+}
+
+.trending{
+    color: white;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.anime-name{
+    text-align: left;
+    line-height: 19px;
+    width: 230px;
+    position: relative;
+    left: -92px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 36px;
+    display: flex;
+    transform: rotate(-90deg);
+    bottom: 3px;
+    background-color: #363232;
+}
+
+.trending-name{
+    width: 19%;
+}
+
+.trending-name span{
+    padding: 5px;
+}
+
+.anime-name>div{
+    padding: 5px;
+    width: 164px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container1{
+    background-color: rgb(27, 26, 26);
+}
+
+.trending-pic>img{
+    height: 230px;
+    width: 100%;
+}
+
+.heading-trend{
+    padding: 10px;
+    margin: 0 0 16px 0px;
+    font-size: 30px;
+    font-weight: 600;
+    color: greenyellow;
+}
+
+#block{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.793);
+    top: 0;
+    left: 0;
+    bottom: 0;
+}

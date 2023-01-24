@@ -1,0 +1,59 @@
+@media (max-width: 780px){
+    .contain{
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px){
+    .social{
+        display: none;
+    }
+    .profile:nth-child(1){
+        display: none;
+    }
+}
+
+@media (max-width: 377px){
+    .q{
+        display: none;
+    }
+    .trending-menu{
+        height: 30vh;
+    }
+
+    .wrapper{
+        height: 63vh;
+    }
+
+    .trending-pic>img{
+        height: 28vh;
+    }
+
+    .trending-name{
+        display: none;
+    }
+
+    .menu-item{
+        width: 31%;
+    }
+    .changes{
+        width: 80%;
+        margin-top: 200px;
+    }
+    .description{
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        margin-top: 10px;
+    }
+    .heading{
+        font-size: 30px;
+        margin: 3px;
+    }
+    #shadow{
+        box-shadow: 44px -151px 197px 8px black inset;
+    }
+}
